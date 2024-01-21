@@ -1,0 +1,17 @@
+<% include ./partials/header.ejs %>
+
+<div class="bg-zinc-300 flex items-center justify-center h-screen">
+  <div class="bg-zinc-50 rounded-2xl p-8 w-72 ">
+    <h1 class="text-2xl font-semibold mb-4">Create New Account</h1>
+    <form action="/register" method="post" class="flex flex-col space-y-4">
+      <input type="text" name="username" placeholder="Username" class=" border p-2 rounded-md focus:outline-none focus:border-blue-500 ">
+      <input type="text" name="fullname" placeholder="FullName" class="border p-2 rounded-md focus:outline-none focus:border-blue-500">
+      <input type="password" name="password" placeholder="Password" class="border p-2 rounded-md focus:outline-none focus:border-blue-500">
+      <input type="email" name="email" placeholder="Email" class="border p-2 rounded-md focus:outline-none focus:border-blue-500" >
+      <button type="submit" class="bg-red-500 text-white p-2 rounded-full hover:bg-red-600 focus:outline-none focus:bg-blue-600 transition duration-300">Create Account</button>
+      <a class="text-blue-500 hover:underline text-center w-full " href="/">if you have account ?</a>
+    </form>
+  </div>
+</div>
+
+<% include ./partials/footer.ejs %>
